@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="Daniela López | Portafolio de Diseño UI/UX">
+
+  <Hero />
+
+  <section id="proyectos" class="py-16">
+    <div class="container mx-auto max-w-5xl px-4">
+      <h2 class="text-4xl font-bold text-red-900 mb-12 text-center">
+        Proyectos
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <ProjectCard 
+          title="CustomBuy (Kiosko de Sublimación)"
+          description="Diseño de interfaz y experiencia de usuario para un kiosko interactivo de personalización de productos."
+          imgSrc="/Gifs/CustomBuy.gif"
+          tags={['Figma', 'UI/UX', 'Diseño de Interfaz']}
+          caseStudyLink="/projects/CustomBuy"
+        />
+        <ProjectCard 
+          title="Sitio Web Veterinaria (& App de Citas)"
+          description="Diseño UI/UX de una aplicación web para la gestión de citas, perfiles de mascotas e historiales médicos."
+          imgSrc="/Gifs/Terranova.gif"
+          tags={['Figma', 'UI/UX', 'Diseño de Interfaz']}
+          caseStudyLink="/projects/Veterinaria"
+        />
+      </div>
+    </div>
+  </section>
+
+  <Contact />
+
+</Layout>

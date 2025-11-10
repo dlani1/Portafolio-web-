@@ -1,0 +1,45 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-brand-gray mt-24">
+  <div class="container mx-auto max-w-5xl px-4 py-10">
+
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+
+      <p class="text-sm text-gray-400 text-center sm:text-left">
+        © {year} Daniela López Amézquita. Todos los derechos reservados.
+        <br />
+        Hecho con Astro & Tailwind CSS.
+      </p>
+
+      <div class="flex gap-6">
+        <a 
+          href="https://www.linkedin.com/in/daniela-lopez-2a562a273/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-gray-300 hover:text-brand-red transition-colors"
+        >
+          LinkedIn
+        </a>
+        <a 
+          href="https://www.figma.com/@DaniLopez" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-gray-300 hover:text-brand-red transition-colors"
+        >
+          Figma
+        </a>
+        <a 
+          href="https://github.com/dlani1" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-gray-300 hover:text-brand-red transition-colors"
+        >
+          GitHub
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
